@@ -3,7 +3,7 @@ package gr.george.volosbeerservice.web.controller;
 import gr.george.volosbeerservice.bootstrap.BeerLoader;
 import gr.george.volosbeerservice.services.BeerService;
 import gr.george.volosbeerservice.web.model.BeerDto;
-import gr.george.volosbeerservice.web.model.BeerStyle;
+import gr.george.volosbeerservice.web.model.BeerStyleEnum;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
@@ -73,7 +73,7 @@ class BeerControllerTest {
     BeerDto getValidBeerDto(){
         return BeerDto.builder()
                 .beerName("My beer")
-                .beerStyle(BeerStyle.ALE)
+                .beerStyleEnum(BeerStyleEnum.ALE)
                 .price(new BigDecimal("2.50"))
                 .upc(BeerLoader.BEER_1_UPC)
                 .build();
