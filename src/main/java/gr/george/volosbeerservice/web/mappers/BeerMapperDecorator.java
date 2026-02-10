@@ -4,6 +4,7 @@ import gr.george.volosbeerservice.domain.Beer;
 import gr.george.volosbeerservice.services.inventory.BeerInventoryService;
 import gr.george.volosbeerservice.web.model.BeerDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public abstract class BeerMapperDecorator implements BeerMapper{
     private BeerInventoryService beerInventoryService;
@@ -16,8 +17,9 @@ public abstract class BeerMapperDecorator implements BeerMapper{
     }
 
     @Autowired
+    @Qualifier("delegate")
     public void setMapper(BeerMapper mapper) {
-        this.mapper =mapper;
+        this.mapper = mapper;
     }
 
     @Override
