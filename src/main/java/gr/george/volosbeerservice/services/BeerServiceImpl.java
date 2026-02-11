@@ -103,8 +103,6 @@ public class BeerServiceImpl implements BeerService {
     @Override
     public BeerDto getBeerByUpc(String upc) {
        Beer beer = beerRepository.findByUpc(upc);
-
        return beerMapper.beerToBeerDto(beer);
-
     }
 }
