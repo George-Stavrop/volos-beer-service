@@ -36,18 +36,18 @@ public class BeerInventoryServiceRestTemplateImpl implements BeerInventoryServic
 
 
         @Override
-    public Integer getOnHandInventory(UUID beerId) {
-        log.debug("Calling Inventory Service");
+        public Integer getOnHandInventory(UUID beerId) {
+            log.debug("Calling Inventory Service");
 
             ResponseEntity<List<BeerInventoryDto>> responseEntity = restTemplate
                     .exchange(beerInventoryServiceHost + INVENTORY_PATH, HttpMethod.GET,null,
                             new ParameterizedTypeReference<List<BeerInventoryDto>>(){}, (Object) beerId);
 
-        Integer onHand = Objects.requireNonNull(responseEntity.getBody())
-                .stream()
-                .mapToInt(BeerInventoryDto::getQuantityOnHand)
-                .sum();
+            Integer onHand = Objects.requireNonNull(responseEntity.getBody())
+                    .stream()
+                    .mapToInt(BeerInventoryDto::getQuantityOnHand)
+                    .sum();
 
-        return  onHand;
-        }
+            return  onHand;
+            }
 }
