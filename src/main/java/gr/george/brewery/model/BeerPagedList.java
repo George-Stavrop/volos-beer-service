@@ -1,4 +1,4 @@
-package gr.george.volosbeerservice.web.model;
+package gr.george.brewery.model;
 
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;

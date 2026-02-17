@@ -1,4 +1,4 @@
-package gr.george.volosbeerservice.web.model;
+package gr.george.brewery.model;
 
 public enum BeerStyleEnum {
    LAGER, PILSNER, STOUT, GOSE, PORTER, ALE,

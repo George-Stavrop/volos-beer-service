@@ -3,7 +3,7 @@ package gr.george.volosbeerservice.services.brewing;
 
 import gr.george.volosbeerservice.config.JmsConfig;
 import gr.george.volosbeerservice.domain.Beer;
-import gr.george.volosbeerservice.events.BrewBeerEvent;
+import gr.george.brewery.model.events.BrewBeerEvent;
 import gr.george.volosbeerservice.repository.BeerRepository;
 import gr.george.volosbeerservice.services.inventory.BeerInventoryService;
 import gr.george.volosbeerservice.web.mappers.BeerMapper;

@@ -1,6 +1,6 @@
-package gr.george.volosbeerservice.events;
+package gr.george.brewery.model.events;
 
-import gr.george.volosbeerservice.web.model.BeerDto;
+import gr.george.brewery.model.BeerDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

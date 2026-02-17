@@ -1,7 +1,7 @@
 package gr.george.volosbeerservice.web.mappers;
 
 import gr.george.volosbeerservice.domain.Beer;
-import gr.george.volosbeerservice.web.model.BeerDto;
+import gr.george.brewery.model.BeerDto;
 import org.mapstruct.DecoratedWith;
 import org.mapstruct.Mapper;
 

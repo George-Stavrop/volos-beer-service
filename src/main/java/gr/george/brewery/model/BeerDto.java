@@ -1,4 +1,4 @@
-package gr.george.volosbeerservice.web.model;
+package gr.george.brewery.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotBlank;

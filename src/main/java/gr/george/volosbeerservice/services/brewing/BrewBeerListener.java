@@ -2,10 +2,10 @@ package gr.george.volosbeerservice.services.brewing;
 
 import gr.george.volosbeerservice.config.JmsConfig;
 import gr.george.volosbeerservice.domain.Beer;
-import gr.george.volosbeerservice.events.BrewBeerEvent;
-import gr.george.volosbeerservice.events.NewInventoryEvent;
+import gr.george.brewery.model.events.BrewBeerEvent;
+import gr.george.brewery.model.events.NewInventoryEvent;
 import gr.george.volosbeerservice.repository.BeerRepository;
-import gr.george.volosbeerservice.web.model.BeerDto;
+import gr.george.brewery.model.BeerDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.annotation.JmsListener;

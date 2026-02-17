@@ -1,8 +1,8 @@
 package gr.george.volosbeerservice.services;
 
-import gr.george.volosbeerservice.web.model.BeerDto;
-import gr.george.volosbeerservice.web.model.BeerPagedList;
-import gr.george.volosbeerservice.web.model.BeerStyleEnum;
+import gr.george.brewery.model.BeerDto;
+import gr.george.brewery.model.BeerPagedList;
+import gr.george.brewery.model.BeerStyleEnum;
 import org.springframework.data.domain.PageRequest;
 
 import java.util.UUID;

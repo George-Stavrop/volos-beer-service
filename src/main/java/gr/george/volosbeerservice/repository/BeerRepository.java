@@ -1,9 +1,8 @@
 package gr.george.volosbeerservice.repository;
 
 import gr.george.volosbeerservice.domain.Beer;
-import gr.george.volosbeerservice.web.model.BeerStyleEnum;
+import gr.george.brewery.model.BeerStyleEnum;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.UUID;
